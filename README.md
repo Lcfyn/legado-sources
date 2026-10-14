@@ -63,7 +63,16 @@ legado-sources/
 
 将以下链接复制到 Legado 的「网络导入」中：
 
-**Legado 书源（全量 6667+ 条）：**
+**Legado 书源（按类型分离，推荐）：**
+
+| 类型 | 条数 | GitHub | Gitee（国内加速） |
+|------|------|--------|-------------------|
+| 小说 A-M | 3185 | [导入](https://raw.githubusercontent.com/Lcfyn/legado-sources/main/bookSources/legado/fiction-part1.json) | [导入](https://gitee.com/Lcfyn/legado-sources/raw/main/bookSources/legado/fiction-part1.json) |
+| 小说 N-Z | 3185 | [导入](https://raw.githubusercontent.com/Lcfyn/legado-sources/main/bookSources/legado/fiction-part2.json) | [导入](https://gitee.com/Lcfyn/legado-sources/raw/main/bookSources/legado/fiction-part2.json) |
+| 漫画 | 155 | [导入](https://raw.githubusercontent.com/Lcfyn/legado-sources/main/bookSources/legado/comics.json) | [导入](https://gitee.com/Lcfyn/legado-sources/raw/main/bookSources/legado/comics.json) |
+| 有声书+其他 | 142 | [导入](https://raw.githubusercontent.com/Lcfyn/legado-sources/main/bookSources/legado/audio-other.json) | [导入](https://gitee.com/Lcfyn/legado-sources/raw/main/bookSources/legado/audio-other.json) |
+
+**全量书源（6667+ 条，37MB，不推荐）：**
 ```
 https://raw.githubusercontent.com/Lcfyn/legado-sources/main/bookSources/legado/all.json
 ```
@@ -73,18 +82,26 @@ https://raw.githubusercontent.com/Lcfyn/legado-sources/main/bookSources/legado/a
 https://raw.githubusercontent.com/Lcfyn/legado-sources/main/purgeSources/legado/all.json
 ```
 
-> 书源涵盖文本小说、漫画、有声书等类型，已自动去重并校验格式。
+**Legado 替换规则（20条）：**
+```
+https://raw.githubusercontent.com/Lcfyn/legado-sources/main/rules/replace-rules.json
+```
+
+> 书源涵盖文本小说、漫画、有声书等类型，已自动去重并校验格式。替换规则需在 Legado「我的 → 替换规则」中导入。国内用户推荐使用 Gitee 加速链接。
 
 ### 方式二：本地导入
 
 1. 下载本仓库（`git clone` 或下载 ZIP）
 2. 打开 Legado → 我的 → 书源管理
-3. 点击右上角「导入」→ 选择 `bookSources/legado/all.json`
+3. 点击右上角「导入」→ 选择 `bookSources/legado/` 下的 JSON 文件
 4. 导入完成后启用需要的书源
 
-### 方式三：按分类导入
+### 方式三：GitCode 镜像
 
-如需按类型单独导入，可将 `all.json` 按 `bookSourceType` 字段筛选后导入。
+也可使用 GitCode 镜像站导入：
+```
+https://gitcode.com/Lcfyn/legado-sources/-/raw/main/bookSources/legado/fiction-part1.json
+```
 
 ---
 
