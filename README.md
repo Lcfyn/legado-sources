@@ -1,4 +1,4 @@
-# legado-sources
+﻿# legado-sources
 
 全网 Legado（阅读 APP）书源、净化源、订阅源聚合仓库。持续收集、整理、校验各类阅读资源配置，专注于 Legado 3.0+ 生态。
 
@@ -63,7 +63,7 @@ legado-sources/
 
 将以下链接复制到 Legado 的「网络导入」中：
 
-**Legado 书源（全量 5505+ 条）：**
+**Legado 书源（全量 6667+ 条）：**
 ```
 https://raw.githubusercontent.com/Lcfyn/legado-sources/main/bookSources/legado/all.json
 ```
@@ -206,3 +206,4 @@ A: 书源速度取决于目标网站的响应速度和你的网络环境，与�
 ## License
 
 [MIT](LICENSE)
+
