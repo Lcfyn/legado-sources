@@ -1,0 +1,18 @@
+[
+  {
+    "sourceName": "本仓库书源订阅",
+    "sourceGroup": "legado-sources",
+    "enabled": true,
+    "url": "https://raw.githubusercontent.com/你的用户名/legado-sources/main/bookSources/legado/all.json",
+    "comment": "订阅本仓库的全量书源，推送至GitHub后替换为实际用户名",
+    "lastUpdateTime": 1700000000000
+  },
+  {
+    "sourceName": "本仓库净化源订阅",
+    "sourceGroup": "legado-sources",
+    "enabled": true,
+    "url": "https://raw.githubusercontent.com/你的用户名/legado-sources/main/purgeSources/legado/all.json",
+    "comment": "订阅本仓库的全量净化源，推送至GitHub后替换为实际用户名",
+    "lastUpdateTime": 1700000000000
+  }
+]

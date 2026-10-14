@@ -1,0 +1,33 @@
+[
+  {
+    "sourceName": "示例净化源",
+    "sourceGroup": "默认分组",
+    "enabled": true,
+    "url": "https://example.com/book/*",
+    "replaceRegex": [
+      {
+        "regex": "广告关键词.*?\\n",
+        "replacement": ""
+      },
+      {
+        "regex": "https?://[^\\s]+",
+        "replacement": ""
+      },
+      {
+        "regex": "（本章未完，请点击下一页继续阅读）",
+        "replacement": ""
+      },
+      {
+        "regex": "<script[\\s\\S]*?</script>",
+        "replacement": ""
+      },
+      {
+        "regex": "<style[\\s\\S]*?</style>",
+        "replacement": ""
+      }
+    ],
+    "js": "",
+    "comment": "净化规则说明：去除广告链接、脚本标签等",
+    "lastUpdateTime": 1700000000000
+  }
+]

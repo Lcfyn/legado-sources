@@ -1,0 +1,10 @@
+[
+  {
+    "sourceName": "示例订阅源",
+    "sourceGroup": "默认分组",
+    "enabled": true,
+    "url": "https://example.com/rss",
+    "comment": "订阅源说明",
+    "lastUpdateTime": 1700000000000
+  }
+]

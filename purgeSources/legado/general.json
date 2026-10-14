@@ -1,0 +1,88 @@
+[
+  {
+    "sourceName": "通用广告净化",
+    "sourceGroup": "通用规则",
+    "enabled": true,
+    "url": ".*",
+    "replaceRegex": [
+      {
+        "regex": "https?://[^\\s]+",
+        "replacement": ""
+      },
+      {
+        "regex": "<script[\\s\\S]*?</script>",
+        "replacement": ""
+      },
+      {
+        "regex": "<style[\\s\\S]*?</style>",
+        "replacement": ""
+      },
+      {
+        "regex": "（本章未完.*?）",
+        "replacement": ""
+      },
+      {
+        "regex": "点击下一页.*?\\n",
+        "replacement": ""
+      },
+      {
+        "regex": "手机用户.*?\\n",
+        "replacement": ""
+      },
+      {
+        "regex": "本书首发.*?\\n",
+        "replacement": ""
+      },
+      {
+        "regex": "最新章节.*?\\n",
+        "replacement": ""
+      }
+    ],
+    "js": "",
+    "comment": "通用广告净化规则，适用于大多数小说网站，去除常见广告文案和链接",
+    "lastUpdateTime": 1700000000000
+  },
+  {
+    "sourceName": "排版优化",
+    "sourceGroup": "通用规则",
+    "enabled": true,
+    "url": ".*",
+    "replaceRegex": [
+      {
+        "regex": "\\n{3,}",
+        "replacement": "\n\n"
+      },
+      {
+        "regex": "^\\s+",
+        "replacement": ""
+      },
+      {
+        "regex": "\\s+$",
+        "replacement": ""
+      },
+      {
+        "regex": "&nbsp;",
+        "replacement": " "
+      },
+      {
+        "regex": "&amp;",
+        "replacement": "&"
+      },
+      {
+        "regex": "&lt;",
+        "replacement": "<"
+      },
+      {
+        "regex": "&gt;",
+        "replacement": ">"
+      },
+      {
+        "regex": "&quot;",
+        "replacement": "\""
+      }
+    ],
+    "js": "",
+    "comment": "通用排版优化，合并多余空行、去除首尾空白、还原HTML实体",
+    "lastUpdateTime": 1700000000000
+  }
+]

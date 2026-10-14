@@ -1,0 +1,49 @@
+[
+  {
+    "bookSourceName": "示例书源名称",
+    "bookSourceGroup": "示例分组",
+    "bookSourceUrl": "https://example.com",
+    "bookSourceType": 0,
+    "bookSourceComment": "书源备注说明",
+    "enabled": true,
+    "enabledExplore": true,
+    "enabledCookieJar": false,
+    "searchUrl": "https://example.com/search?keyword={{key}}&page={{page}}",
+    "exploreUrl": "https://example.com/category",
+    "ruleSearch": {
+      "bookList": "class.book-list@tag.li",
+      "name": "tag.a@text",
+      "author": "class.author@text",
+      "kind": "class.kind@text",
+      "lastChapter": "class.last-chapter@text",
+      "updateTime": "class.update-time@text",
+      "intro": "class.intro@text",
+      "url": "tag.a@href",
+      "coverUrl": "tag.img@src"
+    },
+    "ruleBookInfo": {
+      "name": "class.book-name@text",
+      "author": "class.author@text",
+      "kind": "class.kind@text",
+      "lastChapter": "class.last-chapter@text",
+      "intro": "class.intro@html",
+      "coverUrl": "class.cover@tag.img@src",
+      "tocUrl": "class.toc-link@href"
+    },
+    "ruleToc": {
+      "chapterList": "class.chapter-list@tag.li",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href"
+    },
+    "ruleContent": {
+      "content": "class.content@html",
+      "nextContentUrl": "class.next-page@href",
+      "replaceRegex": [
+        "广告关键词.*?\\n",
+        "https?://[^\\s]+",
+        "（本章未完.*?）"
+      ]
+    },
+    "lastUpdateTime": 1700000000000
+  }
+]
