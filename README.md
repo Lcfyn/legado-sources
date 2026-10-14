@@ -63,7 +63,7 @@ legado-sources/
 
 将以下链接复制到 Legado 的「网络导入」中：
 
-**Legado 书源（全量 5487+ 条）：**
+**Legado 书源（全量 5505+ 条）：**
 ```
 https://raw.githubusercontent.com/Lcfyn/legado-sources/main/bookSources/legado/all.json
 ```
