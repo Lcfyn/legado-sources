@@ -95,8 +95,6 @@ def detect_source_type(data: List[Dict]) -> str:
         return 'legado_purge'
     if 'sourceName' in first:
         return 'legado_subscribe'
-    if 'name' in first and 'searchUrl' in first:
-        return 'xiaomi_book'
     return 'unknown'
 
 
@@ -221,13 +219,6 @@ def validate_file(filepath: str) -> Tuple[bool, int, List[str], List[str]]:
             errors, warnings = validate_purge_source(item, i)
         elif source_type == 'legado_subscribe':
             errors, warnings = validate_subscribe_source(item, i)
-        elif source_type == 'xiaomi_book':
-            # 小米阅读格式校验较宽松
-            errors, warnings = [], []
-            if 'name' not in item:
-                errors.append(f"第 {i} 条: 缺少 'name' 字段")
-            if 'searchUrl' not in item:
-                errors.append(f"第 {i} 条: 缺少 'searchUrl' 字段")
         else:
             warnings = [f"第 {i} 条: 无法识别的源格式，跳过详细校验"]
             errors = []

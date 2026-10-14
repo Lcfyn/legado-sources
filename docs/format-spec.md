@@ -1,6 +1,6 @@
 # 书源格式规范详解
 
-本文档详细说明各阅读 APP 的书源、净化源、订阅源的 JSON 格式规范，供贡献者参考。
+本文档详细说明 Legado（阅读 APP）的书源、净化源、订阅源的 JSON 格式规范，供贡献者参考。
 
 ---
 
@@ -15,7 +15,6 @@
   - [选择器语法](#选择器语法)
 - [Legado 净化源格式](#legado-净化源格式)
 - [Legado 订阅源格式](#legado-订阅源格式)
-- [小米阅读书源格式](#小米阅读书源格式)
 - [URL 变量替换](#url-变量替换)
 - [常见问题](#常见问题)
 
@@ -202,26 +201,6 @@ class.content || id.content || tag.article
 | `url` | string | ✅ | 订阅地址（返回 JSON 数组的 URL） |
 | `comment` | string | ❌ | 备注 |
 | `lastUpdateTime` | long | ❌ | 更新时间 |
-
----
-
-## 小米阅读书源格式
-
-小米阅读使用简化的 JSON 格式。
-
-| 字段 | 类型 | 必填 | 说明 |
-|------|------|------|------|
-| `name` | string | ✅ | 书源名称 |
-| `url` | string | ✅ | 站点 URL |
-| `type` | int | ✅ | 类型：0=文本, 1=音频, 2=图片 |
-| `enabled` | boolean | ❌ | 是否启用 |
-| `searchUrl` | string | ✅ | 搜索 URL |
-| `searchRule` | object | ✅ | 搜索解析规则 |
-| `detailRule` | object | ✅ | 详情解析规则 |
-| `tocRule` | object | ✅ | 目录解析规则 |
-| `contentRule` | object | ✅ | 正文解析规则 |
-
-小米阅读的选择器语法与 Legado 类似，但字段名更简洁。
 
 ---
 

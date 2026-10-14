@@ -1,6 +1,6 @@
 # legado-sources
 
-全网阅读 APP 书源、净化源、订阅源聚合仓库。持续收集、整理、校验各类阅读资源配置，支持 Legado（阅读）、小米阅读及更多主流阅读 APP。
+全网 Legado（阅读 APP）书源、净化源、订阅源聚合仓库。持续收集、整理、校验各类阅读资源配置，专注于 Legado 3.0+ 生态。
 
 > ⚠️ **免责声明**：本仓库仅收集和整理第三方公开的阅读源配置文件，不存储任何书籍内容。所有书源均指向互联网公开网站，版权归原网站及作者所有。如有侵权请提交 Issue，我们将在 24 小时内移除相关内容。请支持正版阅读。
 
@@ -24,10 +24,8 @@
 | APP | 书源 | 净化源 | 订阅源 | 格式 |
 |-----|------|--------|--------|------|
 | **Legado / 阅读** (3.0+) | ✅ | ✅ | ✅ | JSON |
-| **小米阅读** | ✅ | ✅ | ❌ | JSON |
-| **其他 APP** | 🔄 | 🔄 | ❌ | 见各子目录 |
 
-> 🔄 = 持续补充中，欢迎 PR 贡献
+> 本仓库专注于 Legado 生态，其他 APP 格式暂不收录。
 
 ---
 
@@ -36,20 +34,16 @@
 ```
 legado-sources/
 ├── bookSources/              # 书源
-│   ├── legado/               #   Legado 格式
-│   │   ├── fiction/          #     小说类
-│   │   ├── comics/           #     漫画类
-│   │   └── audiobooks/       #     有声书类
-│   ├── xiaomi/               #   小米阅读格式
-│   └── other/                #   其他 APP 格式
+│   └── legado/               #   Legado 格式
+│       ├── fiction/          #     小说类
+│       ├── comics/           #     漫画类
+│       └── audiobooks/       #     有声书类
 ├── purgeSources/             # 净化源（广告过滤规则）
-│   ├── legado/
-│   └── xiaomi/
+│   └── legado/
 ├── subscribeSources/         # 订阅源 / 发现源
-│   ├── legado/
-│   └── xiaomi/
+│   └── legado/
 ├── rules/                    # 替换规则、正文净化规则
-├── templates/                # 各格式模板文件
+├── templates/                # Legado 格式模板文件
 ├── tools/                    # 工具脚本
 │   ├── validate.py           #   书源格式校验
 │   └── merge.py              #   多文件合并
@@ -67,7 +61,7 @@ legado-sources/
 
 ### 方式一：网络导入（推荐）
 
-将以下链接复制到阅读 APP 的「网络导入」中：
+将以下链接复制到 Legado 的「网络导入」中：
 
 **Legado 书源（全量）：**
 ```
@@ -79,19 +73,19 @@ https://raw.githubusercontent.com/Lcfyn/legado-sources/main/bookSources/legado/a
 https://raw.githubusercontent.com/Lcfyn/legado-sources/main/purgeSources/legado/all.json
 ```
 
-> 链接已配置为 Lcfyn 的仓库，可直接使用。
+> 首次使用需先运行合并工具生成 `all.json`，详见 [工具使用](#工具使用)。
 
 ### 方式二：本地导入
 
 1. 下载本仓库（`git clone` 或下载 ZIP）
-2. 打开阅读 APP → 我的 → 书源管理
+2. 打开 Legado → 我的 → 书源管理
 3. 点击右上角「导入」→ 选择本地 JSON 文件
 4. 导入完成后启用需要的书源
 
 ### 方式三：订阅源自动更新
 
 1. 复制订阅源链接
-2. 阅读 APP → 我的 → 订阅源 → 添加
+2. Legado → 我的 → 订阅源 → 添加
 3. 开启自动更新，书源将定期同步最新版本
 
 ---
@@ -118,10 +112,6 @@ https://raw.githubusercontent.com/Lcfyn/legado-sources/main/purgeSources/legado/
 | `lastUpdateTime` | long | ❌ | 最后更新时间戳 |
 
 完整字段说明请参考 [docs/format-spec.md](docs/format-spec.md)。
-
-### 小米阅读书源字段
-
-小米阅读使用简化版 JSON 格式，模板见 `templates/xiaomi-book-source.json`。
 
 ---
 
@@ -154,6 +144,12 @@ python3 tools/merge.py bookSources/legado/ -o bookSources/legado/all.json
 - `-o, --output`：输出文件路径
 - `--pretty`：格式化输出（缩进 2 空格）
 - `--dedup`：按 `bookSourceUrl` 去重
+
+**生成全量文件：**
+```bash
+python3 tools/merge.py bookSources/legado/ -o bookSources/legado/all.json --pretty --dedup
+python3 tools/merge.py purgeSources/legado/ -o purgeSources/legado/all.json --pretty --dedup
+```
 
 ---
 

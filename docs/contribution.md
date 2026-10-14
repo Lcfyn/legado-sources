@@ -64,7 +64,6 @@ git checkout -b feature/你的分支名
 bookSources/legado/fiction/      # Legado 小说书源
 bookSources/legado/comics/       # Legado 漫画书源
 bookSources/legado/audiobooks/   # Legado 有声书源
-bookSources/xiaomi/              # 小米阅读书源
 purgeSources/legado/             # Legado 净化源
 subscribeSources/legado/         # Legado 订阅源
 ```
