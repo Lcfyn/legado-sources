@@ -65,12 +65,12 @@ legado-sources/
 
 **Legado 书源（按类型分离，推荐）：**
 
-| 类型 | 条数 | GitHub | jsDelivr CDN（国内加速） |
+| 类型 | 条数 | GitHub | GitHub Pages（稳定加速） |
 |------|------|--------|-------------------|
-| 小说 A-M | 3185 | [导入](https://raw.githubusercontent.com/Lcfyn/legado-sources/main/bookSources/legado/fiction-part1.json) | [导入](https://cdn.jsdelivr.net/gh/Lcfyn/legado-sources@main/bookSources/legado/fiction-part1.json) |
-| 小说 N-Z | 3185 | [导入](https://raw.githubusercontent.com/Lcfyn/legado-sources/main/bookSources/legado/fiction-part2.json) | [导入](https://cdn.jsdelivr.net/gh/Lcfyn/legado-sources@main/bookSources/legado/fiction-part2.json) |
-| 漫画 | 155 | [导入](https://raw.githubusercontent.com/Lcfyn/legado-sources/main/bookSources/legado/comics.json) | [导入](https://cdn.jsdelivr.net/gh/Lcfyn/legado-sources@main/bookSources/legado/comics.json) |
-| 有声书+其他 | 142 | [导入](https://raw.githubusercontent.com/Lcfyn/legado-sources/main/bookSources/legado/audio-other.json) | [导入](https://cdn.jsdelivr.net/gh/Lcfyn/legado-sources@main/bookSources/legado/audio-other.json) |
+| 小说 A-M | 3185 | [导入](https://raw.githubusercontent.com/Lcfyn/legado-sources/main/bookSources/legado/fiction-part1.json) | [导入](https://lcfyn.github.io/legado-sources/bookSources/legado/fiction-part1.json) |
+| 小说 N-Z | 3185 | [导入](https://raw.githubusercontent.com/Lcfyn/legado-sources/main/bookSources/legado/fiction-part2.json) | [导入](https://lcfyn.github.io/legado-sources/bookSources/legado/fiction-part2.json) |
+| 漫画 | 155 | [导入](https://raw.githubusercontent.com/Lcfyn/legado-sources/main/bookSources/legado/comics.json) | [导入](https://lcfyn.github.io/legado-sources/bookSources/legado/comics.json) |
+| 有声书+其他 | 142 | [导入](https://raw.githubusercontent.com/Lcfyn/legado-sources/main/bookSources/legado/audio-other.json) | [导入](https://lcfyn.github.io/legado-sources/bookSources/legado/audio-other.json) |
 
 **全量书源（6667+ 条，37MB，不推荐）：**
 ```
