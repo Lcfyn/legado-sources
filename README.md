@@ -71,15 +71,15 @@ legado-sources/
 
 **Legado 书源（全量）：**
 ```
-https://raw.githubusercontent.com/你的用户名/legado-sources/main/bookSources/legado/all.json
+https://raw.githubusercontent.com/Lcfyn/legado-sources/main/bookSources/legado/all.json
 ```
 
 **Legado 净化源：**
 ```
-https://raw.githubusercontent.com/你的用户名/legado-sources/main/purgeSources/legado/all.json
+https://raw.githubusercontent.com/Lcfyn/legado-sources/main/purgeSources/legado/all.json
 ```
 
-> 推送至 GitHub 后，将 `你的用户名` 替换为实际的 GitHub 用户名。
+> 链接已配置为 Lcfyn 的仓库，可直接使用。
 
 ### 方式二：本地导入
 
