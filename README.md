@@ -65,12 +65,12 @@ legado-sources/
 
 **Legado 书源（按类型分离，推荐）：**
 
-| 类型 | 条数 | GitHub | GitHub Pages（稳定加速） |
+| 类型 | 条数 | GitHub | 镜像加速（国内可用） |
 |------|------|--------|-------------------|
-| 小说 A-M | 3185 | [导入](https://raw.githubusercontent.com/Lcfyn/legado-sources/main/bookSources/legado/fiction-part1.json) | [导入](https://lcfyn.github.io/legado-sources/bookSources/legado/fiction-part1.json) |
-| 小说 N-Z | 3185 | [导入](https://raw.githubusercontent.com/Lcfyn/legado-sources/main/bookSources/legado/fiction-part2.json) | [导入](https://lcfyn.github.io/legado-sources/bookSources/legado/fiction-part2.json) |
-| 漫画 | 155 | [导入](https://raw.githubusercontent.com/Lcfyn/legado-sources/main/bookSources/legado/comics.json) | [导入](https://lcfyn.github.io/legado-sources/bookSources/legado/comics.json) |
-| 有声书+其他 | 142 | [导入](https://raw.githubusercontent.com/Lcfyn/legado-sources/main/bookSources/legado/audio-other.json) | [导入](https://lcfyn.github.io/legado-sources/bookSources/legado/audio-other.json) |
+| 小说 A-M | 3185 | [导入](https://raw.githubusercontent.com/Lcfyn/legado-sources/main/bookSources/legado/fiction-part1.json) | [导入](https://wget.la/https://raw.githubusercontent.com/Lcfyn/legado-sources/main/bookSources/legado/fiction-part1.json) |
+| 小说 N-Z | 3185 | [导入](https://raw.githubusercontent.com/Lcfyn/legado-sources/main/bookSources/legado/fiction-part2.json) | [导入](https://wget.la/https://raw.githubusercontent.com/Lcfyn/legado-sources/main/bookSources/legado/fiction-part2.json) |
+| 漫画 | 155 | [导入](https://raw.githubusercontent.com/Lcfyn/legado-sources/main/bookSources/legado/comics.json) | [导入](https://wget.la/https://raw.githubusercontent.com/Lcfyn/legado-sources/main/bookSources/legado/comics.json) |
+| 有声书+其他 | 142 | [导入](https://raw.githubusercontent.com/Lcfyn/legado-sources/main/bookSources/legado/audio-other.json) | [导入](https://wget.la/https://raw.githubusercontent.com/Lcfyn/legado-sources/main/bookSources/legado/audio-other.json) |
 
 **全量书源（6667+ 条，37MB，不推荐）：**
 ```
@@ -87,7 +87,11 @@ https://raw.githubusercontent.com/Lcfyn/legado-sources/main/purgeSources/legado/
 https://raw.githubusercontent.com/Lcfyn/legado-sources/main/rules/replace-rules.json
 ```
 
-> 书源涵盖文本小说、漫画、有声书等类型，已自动去重并校验格式。替换规则需在 Legado「我的 → 替换规则」中导入。国内用户推荐使用 Gitee 加速链接。
+> 书源涵盖文本小说、漫画、有声书等类型，已自动去重并校验格式。替换规则需在 Legado「我的 → 替换规则」中导入。
+
+> **镜像源说明**：如果 wget.la 访问慢或不可用，可将链接前缀替换为以下任意一个：
+> - `https://gh-proxy.org/https://raw.githubusercontent.com/...`
+> - `https://gh.catmak.name/https://raw.githubusercontent.com/...`国内用户推荐使用 Gitee 加速链接。
 
 ### 方式二：本地导入
 
