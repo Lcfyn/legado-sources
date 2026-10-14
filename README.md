@@ -63,7 +63,7 @@ legado-sources/
 
 将以下链接复制到 Legado 的「网络导入」中：
 
-**Legado 书源（全量）：**
+**Legado 书源（全量 5487+ 条）：**
 ```
 https://raw.githubusercontent.com/Lcfyn/legado-sources/main/bookSources/legado/all.json
 ```
@@ -73,20 +73,18 @@ https://raw.githubusercontent.com/Lcfyn/legado-sources/main/bookSources/legado/a
 https://raw.githubusercontent.com/Lcfyn/legado-sources/main/purgeSources/legado/all.json
 ```
 
-> 首次使用需先运行合并工具生成 `all.json`，详见 [工具使用](#工具使用)。
+> 书源涵盖文本小说、漫画、有声书等类型，已自动去重并校验格式。
 
 ### 方式二：本地导入
 
 1. 下载本仓库（`git clone` 或下载 ZIP）
 2. 打开 Legado → 我的 → 书源管理
-3. 点击右上角「导入」→ 选择本地 JSON 文件
+3. 点击右上角「导入」→ 选择 `bookSources/legado/all.json`
 4. 导入完成后启用需要的书源
 
-### 方式三：订阅源自动更新
+### 方式三：按分类导入
 
-1. 复制订阅源链接
-2. Legado → 我的 → 订阅源 → 添加
-3. 开启自动更新，书源将定期同步最新版本
+如需按类型单独导入，可将 `all.json` 按 `bookSourceType` 字段筛选后导入。
 
 ---
 
