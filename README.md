@@ -1,4 +1,4 @@
-﻿# legado-sources
+# legado-sources
 
 全网 Legado（阅读 APP）书源、净化源、订阅源聚合仓库。持续收集、整理、校验各类阅读资源配置，专注于 Legado 3.0+ 生态。
 
